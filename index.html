@@ -2,9 +2,76 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>WINNERS' PIZZA POINT</title>
   </head>
   <body>
-  <p>Welcome to Winners' pizza point where there's everyone's choice of taste.</p>
+  <h2>Welcome to Winners' pizza point where there's everyone's choice of taste.</h2>
+  <h1>Samples:</h1>
+  <div class="container">
+  <img src="flatbread.jpg" class="rounded-circle" alt="flatbread" width="304" height="236">
+  <img src="thickcrust.jpeg" class="rounded-circle" alt="thickcrust" width="304" height="236">
+  <img src="thincrust.png" class="rounded-circle" alt="thickcrust" width="304" height="236">
+</div>
+<h1>Customer's order:</h1>
+<div class="dropdown dropright float-left">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      crust type
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" >flatbread</a>
+      <a class="dropdown-item" >thickcrust</a>
+      <a class="dropdown-item" >thincrust</a>
+    </div>
+    <div class="dropdown dropright float-left">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        sizes
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" >mega</a>
+        <a class="dropdown-item" >large</a>
+        <a class="dropdown-item" >medium</a>
+        <a class="dropdown-item" >small</a>
+      </div>
+      <div class="dropdown dropright float-left">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          toppings
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" >Pepperoni</a>
+          <a class="dropdown-item" >mushrooms</a>
+          <a class="dropdown-item" >onions</a>
+          <a class="dropdown-item" >sausage</a>
+          <a class="dropdown-item" >bacon</a>
+          <a class="dropdown-item" >extra cheese</a>
+          <a class="dropdown-item" >black olives</a>
+          <a class="dropdown-item" >green peppers</a>
+        </div>
+        <form action="/action_page.php">
+          <div class="form">
+          <label for="usr">Quantity</label>
+          <input type="text" class="form-control" id="quantity" name="quantity">
+        </form>
+        <h1>customer's details:</h1>
+        <form action="/action_page.php">
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr" name="username">
+    </div>
+    <div class="form-group">
+      <label for="usr">Email:</label>
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="form-group">
+    <label for="usr">Phone number:</label>
+    <input type="phone no." class="form-control" id="Phone number" name="phone number">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</div>
   </body>
 </html>
