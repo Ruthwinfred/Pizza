@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -12,11 +14,40 @@
   <body>
   <h2>Welcome to Winners' pizza point where there's everyone's choice of taste.</h2>
   <h1>Samples:</h1>
-  <div class="container">
-  <img src="flatbread.jpg" class="rounded-circle" alt="flatbread" width="304" height="236">
-  <img src="thickcrust.jpeg" class="rounded-circle" alt="thickcrust" width="304" height="236">
-  <img src="thincrust.png" class="rounded-circle" alt="thickcrust" width="304" height="236">
-</div>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="flatbread.jpg" alt="flatbread" width="100px" height="100px">
+        <div class="carousel-caption">
+          <h3>flatbread</h3>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="thickcrust.jpeg" alt="thickcrust" width="100px" height="100px">
+        <div class="carousel-caption">
+          <h3>thickcrust</h3>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="thincrust.png" alt="thincrust" width="100px" height="100px">
+        <div class="carousel-caption">
+          <h3>thincrust</h3>
+        </div>   
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  
 <h1>Customer's order:</h1>
 <div class="dropdown dropright float-left">
     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -69,7 +100,7 @@
     <div class="form-group">
     <label for="usr">Phone number:</label>
     <input type="phone no." class="form-control" id="Phone number" name="phone number">
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="border"><a href="#" target="_blank">submit</a></button>
   </form>
 </div>
 </div>
