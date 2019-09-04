@@ -9,7 +9,7 @@ There is no special installation used in packaging.
 ## Contributing
 For any comments,feedback and changes please feel free to air them out as they are allowed on my website.
 
-##### By: Ruth Winfred
+##### Author: Ruth Winfred
 
 ##### License
 ###### (c) copyright 2019
